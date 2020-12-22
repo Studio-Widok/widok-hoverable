@@ -1,4 +1,4 @@
-const $ = require('cash-dom');
+import $ from 'cash-dom';
 
 const createHoverable = (function () {
   class Hoverable {
@@ -47,4 +47,4 @@ const createHoverable = (function () {
   };
 })();
 
-if (typeof module !== 'undefined') module.exports = createHoverable;
+export default createHoverable;
